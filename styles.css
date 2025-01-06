@@ -1,0 +1,190 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+input[type="text"],
+input[type="number"] {
+    padding: 10px;
+    font-size: 1rem;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus {
+    border-color: #ff4444;
+}
+
+button {
+    padding: 10px;
+    font-size: 1rem;
+    background-color: #ff4444;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ee0000;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin-bottom: 20px;
+}
+
+li {
+    padding: 8px;
+    font-size: 1.1rem;
+    border-bottom: 1px solid #ddd;
+}
+
+li:last-child {
+    border-bottom: none;
+}
+
+p {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+#total-calories,
+#total-burned,
+#calorie-balance {
+    font-weight: bold;
+    color: #ff4444;
+}
+
+section {
+    margin-bottom: 30px;
+    padding: 15px;
+    background-color: #fafafa;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#calorie-counter {
+    border-left: 5px solid #4CAF50;
+}
+
+#workout-log {
+    border-left: 5px solid #2196F3;
+}
+
+#calorie-balance-section {
+    border-left: 5px solid #FF9800;
+}
+
+#calorie-counter,
+#workout-log {
+    flex: 1;
+    min-width: 45%; /* Минимальная ширина */
+}
+
+.tracker-sections {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+#save-day {
+    margin-top: 10px;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.container {
+    flex: 0 0 70%;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.sidebar {
+    flex: 0 0 25%;
+    background-color: #f8f9fa;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow-y: auto; /* Скроллинг для длинной истории */
+    max-height: 90vh;
+}
+
+.sidebar h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.sidebar div {
+    background-color: #fff;
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar div h3 {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+    color: #444;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar li {
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+#balance-date {
+    padding: 10px;
+    font-size: 1.2rem;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+    width: 120px;
+    outline: none;
+}
+
+#balance-date:focus {
+    border-color: #ff4444;
+}
