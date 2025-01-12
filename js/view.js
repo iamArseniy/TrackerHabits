@@ -11,7 +11,12 @@ const view = {
 
     renderDayHistory(dayData) {
         const dayHistory = document.getElementById('day-history');
-        dayHistory.innerHTML = '';
+        
+        Array.from(dayHistory.children).forEach(child => {
+            if (child.id !== 'day-history-header') {
+                dayHistory.removeChild(child);
+            }
+        });
 
         for (const date in dayData) {
             const day = dayData[date];
